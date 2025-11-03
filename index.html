@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculadora de Investimento - CDI</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+
+  <div class="container">
+    <h2>📊 Calculadora de Investimento CDI</h2>
+
+    <label>Aporte inicial (R$):</label>
+    <input type="number" id="aporteInicial" value="">
+    <small>Valor único que você investirá no início.</small>
+
+    <label>Aporte mensal (R$):</label>
+    <input type="number" id="aporteMensal" value="">
+    <small>Valor que você investirá a cada mês.</small>
+
+    <label>CDI anual (%):</label>
+    <input type="number" id="cdi" value="" step="0.01">
+    <small>Taxa anual do CDI (ex: 10.65).</small>
+
+    <label>Percentual do CDI (%):</label>
+    <input type="number" id="percentualCdi" value="" step="0.1">
+    <small>Percentual do CDI que o investimento rende (ex: 105).</small>
+
+    <label>Prazo (meses):</label>
+    <input type="number" id="meses" value="">
+    <small>Duração total do investimento em meses.</small>
+
+    <button onclick="calcular()">Calcular</button>
+
+    <div id="resultado"></div>
+
+    <canvas id="grafico"></canvas>
+  </div>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
